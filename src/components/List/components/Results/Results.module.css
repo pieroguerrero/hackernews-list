@@ -1,0 +1,15 @@
+.ul-results {
+  margin-top: 2rem;
+  padding-left: 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.5rem;
+  row-gap: 1.875rem;
+  width: fit-content;
+}
+
+@media all and (max-width: 640px) {
+  .ul-results {
+    grid-template-columns: 1fr;
+  }
+}
