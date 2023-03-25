@@ -1,0 +1,20 @@
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+  --azure: #1797ff;
+  --brownish-grey: #6b6b6b;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
