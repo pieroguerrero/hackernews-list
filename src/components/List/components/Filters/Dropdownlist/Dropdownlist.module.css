@@ -1,0 +1,31 @@
+.div-dropdownlist {
+  position: relative;
+  width: fit-content;
+}
+
+.div-options {
+  position: absolute;
+  max-width: 15rem;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 0.625rem;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 #dad8d8;
+  z-index: 10;
+}
+
+.button-select {
+  width: 15rem;
+  height: 2rem;
+  padding-left: 0.9rem;
+  border-radius: 4px;
+  border: solid 1px #2e2e2e;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
