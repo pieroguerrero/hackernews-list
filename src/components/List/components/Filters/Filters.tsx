@@ -9,9 +9,5 @@ interface IFilters {
  * Renders all the filters that control the Results
  */
 export default function Filters({ framework, setFramework }: IFilters) {
-  return (
-    <div>
-      <Dropdownlist framework={framework} setFramework={setFramework} />
-    </div>
-  );
+  return <Dropdownlist framework={framework} setFramework={setFramework} />;
 }

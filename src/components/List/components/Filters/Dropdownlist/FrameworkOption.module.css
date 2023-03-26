@@ -13,4 +13,9 @@
   line-height: 1.57;
   letter-spacing: normal;
   color: #343434;
+  padding-left: 0.9rem;
+}
+
+.option:hover {
+  background-color: #f5f5f5;
 }

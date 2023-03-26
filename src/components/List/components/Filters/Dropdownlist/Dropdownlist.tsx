@@ -5,6 +5,7 @@ import pngVue from "../../../../../assets/list/filters/image-141.png";
 import { FrameworkType } from "../../../../../interfaces/Frameworks";
 import dropdlStyles from "./Dropdownlist.module.css";
 import FrameworkOption from "./FrameworkOption";
+import svgExpand from "../../../../../assets/list/filters/expand_more_FILL0_wght200_GRAD0_opsz24.svg";
 
 interface IDropdownlist {
   framework: string;
@@ -36,8 +37,20 @@ export default function Dropdownlist({
         onClick={handleClickOpen}
         className={dropdlStyles["button-select"]}
       >
-        <img src={valuesList[framework].img} />
-        <span>{valuesList[framework].name}</span>
+        {framework.length > 0 ? (
+          <div className={dropdlStyles["button-select-option"]}>
+            <div>
+              <img src={valuesList[framework].img} />
+              <span>{valuesList[framework].name}</span>
+            </div>
+            <img src={svgExpand} alt="Expand" />
+          </div>
+        ) : (
+          <div className={dropdlStyles["button-select-empty"]}>
+            <span>Select your news</span>
+            <img src={svgExpand} alt="Expand" />
+          </div>
+        )}
       </button>
       {isOpen ? (
         <div className={dropdlStyles["div-options"]}>

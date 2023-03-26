@@ -1,16 +1,16 @@
 .div-dropdownlist {
   position: relative;
-  width: fit-content;
 }
 
 .div-options {
   position: absolute;
-  max-width: 15rem;
+  /* TODO: Fix the length of the dropdownlis menu */
+  width: 15rem;
   top: 2rem;
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-left: 0.625rem;
+
   background-color: white;
   overflow: hidden;
   box-shadow: 0 2px 2px 0 #dad8d8;
@@ -27,5 +27,39 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+.button-select-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-select-option div {
+  display: flex;
+  align-items: center;
   gap: 1rem;
+  color: #343434;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+}
+
+.button-select-empty {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0.5rem;
+  color: #343434;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
 }
