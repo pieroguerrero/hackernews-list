@@ -4,12 +4,10 @@
 
 .div-options {
   position: absolute;
-  /* TODO: Fix the length of the dropdownlis menu */
-  width: 15rem;
+  width: fit-content;
   top: 2rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
 
   background-color: white;
   overflow: hidden;
@@ -27,6 +25,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .button-select-option {
@@ -62,4 +61,5 @@
   font-style: normal;
   line-height: 1.57;
   letter-spacing: normal;
+  font-family: "Roboto", sans-serif;
 }
