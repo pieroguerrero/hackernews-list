@@ -3,7 +3,6 @@
   grid-template-columns: auto;
   grid-template-rows: auto max-content;
   background-color: #fcfcfc;
-  min-width: 100vh;
 }
 
 .header {
