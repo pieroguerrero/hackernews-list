@@ -1,0 +1,14 @@
+.list {
+  --margin-left: 9.375rem;
+}
+
+.list {
+  margin-left: var(--margin-left);
+  margin-right: var(--margin-left);
+}
+
+@media all and (max-width: 640px) {
+  .list {
+    --margin-left: 1.5rem;
+  }
+}

@@ -19,9 +19,10 @@ export default function AllResults({ framework }: IResults) {
 
   //Retrieve data only when framerowk changes
   useEffect(() => {
-    listPosts(framework, 0)
-      .then((postResults) => setPosts(postResults))
-      .catch((error) => handleException(error));
+    if (framework.length > 0)
+      listPosts(framework, 0)
+        .then((postResults) => setPosts(postResults))
+        .catch((error) => handleException(error));
     setPage(0);
   }, [framework]);
 
@@ -46,7 +47,8 @@ export default function AllResults({ framework }: IResults) {
           //If the Observed element is on the User's view, then increment the page in 1.
           if (
             entry.isIntersecting &&
-            entry.target === bottomRef.current //&&
+            entry.target === bottomRef.current &&
+            framework.length > 0 //&&
             //window.scrollY > 0
           ) {
             setPage((prev) => prev + 1);
@@ -66,7 +68,7 @@ export default function AllResults({ framework }: IResults) {
     return () => {
       iObserver.disconnect();
     };
-  }, []);
+  }, [framework]);
 
   const handleLike = (postId: string, like: boolean) => {
     const updatedPosts = [...posts];
@@ -87,7 +89,9 @@ export default function AllResults({ framework }: IResults) {
           <ResultItem handleLike={handleLike} key={post.postId} post={post} />
         ))}
       </ul>
-      <div ref={bottomRef}>{"Hacker News"}</div>
+      <div ref={bottomRef}>
+        {framework.length > 0 ? "Hacker News" : "No results to show."}
+      </div>
     </>
   );
 }

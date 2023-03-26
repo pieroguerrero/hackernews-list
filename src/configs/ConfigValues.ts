@@ -6,6 +6,7 @@ const ConfigValues = Object.freeze({
   PageURLParameter: "page",
   PostQueryURL: "https://hn.algolia.com/api/v1/search_by_date",
   LocalStorageId: "user-id-liked-posts",
+  LocalStorageFrameworkId: "user-id-framework",
 });
 
 export default ConfigValues;
