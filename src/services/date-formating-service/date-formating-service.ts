@@ -1,7 +1,4 @@
-import differenceInMinutes from "date-fns/differenceInMinutes";
-import format from "date-fns/format";
-import isSameYear from "date-fns/isSameYear";
-import isYesterday from "date-fns/isYesterday";
+import { differenceInMinutes, format, isSameYear, isYesterday } from "date-fns";
 
 export function formatPostCreationDate(creationDate: Date): string {
   const today = new Date();
