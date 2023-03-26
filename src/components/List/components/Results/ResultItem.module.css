@@ -1,6 +1,12 @@
 .li {
+  --with: 34.375rem;
+}
+
+/* width: var(--with); */
+
+.li {
   list-style-type: none;
-  width: 34.375rem;
+
   height: 5.625rem;
   padding: 0rem 0 0 1.625rem;
   border-radius: 6px;
@@ -8,6 +14,19 @@
   background-color: #fff;
   display: flex;
 }
+
+@media all and (max-width: 1400px) {
+  .li {
+    --with: 30rem;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .li {
+    --with: 95%;
+  }
+}
+
 .li:hover {
   opacity: 0.5;
 }
@@ -36,6 +55,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 0.438rem;
+  text-decoration: none;
 }
 
 .li-div-text-header {

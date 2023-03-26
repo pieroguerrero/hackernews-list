@@ -3,6 +3,7 @@ import itemStyle from "./ResultItem.module.css";
 import svgTimer from "../../../../assets/list/results/iconmonstr-time-2.svg";
 import svgHeartFill from "../../../../assets/list/results/iconmonstr-favorite-3.svg";
 import svgHeartEmpty from "../../../../assets/list/results/iconmonstr-favorite-2.svg";
+import { formatPostCreationDate } from "../../../../services/date-formating-service/date-formating-service";
 
 interface IResultItem {
   post: IPost;
@@ -11,15 +12,22 @@ interface IResultItem {
 export default function ResultItem({ post, handleLike }: IResultItem) {
   return (
     <li className={itemStyle["li"]}>
-      <div className={itemStyle["li-div-text"]}>
+      <a
+        href={post.storyUrl}
+        target="_blank"
+        className={itemStyle["li-div-text"]}
+        rel="noreferrer"
+      >
         <div className={itemStyle["li-div-text-header"]}>
           <img src={svgTimer} alt="timer" />
-          <span>{post.createdAt.toDateString() + " by " + post.author}</span>
+          <span>
+            {formatPostCreationDate(post.createdAt) + " by " + post.author}
+          </span>
         </div>
         <span className={itemStyle["li-div-text-title"]}>
           {post.storyTitle}
         </span>
-      </div>
+      </a>
       <div className={itemStyle["li-div-like"]}>
         <button
           className={itemStyle["li-div-like-button"]}
