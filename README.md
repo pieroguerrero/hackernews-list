@@ -21,12 +21,10 @@
 
 
 ## General Information
-- This is a coding challenge built to apply to the 'React Developer' position at [Apply Digital](https://www.applydigital.com/).
 - This is a Frontend application that retrive the latest news posted on the [YCombinator's Hacker News](https://news.ycombinator.com/) list. It also allows to save your favourite News locally.
 - There are only two external javascript libraries used for this project: Axios to interact with APIs and [Date-fns](https://date-fns.org/) to format dates values. The rest is vanilla CSS and HTML.
 
 ## Requiriments
-The following requiriments are based on the documentation provided by Apply Digital, all were fulfilled:
 
 ### Base Functional Requiriments
 - The selected filter should persist on the local storage. ✔ **DONE**
