@@ -1,4 +1,4 @@
-# Apply Digital coding challenge - Correo
+# Hacker News List
 > [Hacker News](https://news.ycombinator.com/) interactive visualizer.
 > 
 > See the live demo [here](https://main--stalwart-hummingbird-037189.netlify.app/)
