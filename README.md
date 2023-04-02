@@ -4,7 +4,7 @@
 > See the live demo [here](https://main--stalwart-hummingbird-037189.netlify.app/)
 
 ## Table of Contents
-- [Apply Digital coding challenge - Correo](#apply-digital-coding-challenge---correo)
+- [Hacker News List](#hacker-news-list)
   - [Table of Contents](#table-of-contents)
   - [General Information](#general-information)
   - [Requiriments](#requiriments)
